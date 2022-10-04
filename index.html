@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn Awesome Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- cdn Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Slick CSS -->
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lukani - Shop</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-top">
+            <div class="container-fluid px-0 d-flex justify-content-between">
+                <div class="header-top-left">
+                    <p class="m-0">Free Delivery: Take advantage of our time to save event</p>
+                </div>
+                <div class="header-top-right">
+                    <ul class="currency-language m-0">
+                        <li class="currency">
+                            <a href="#">USD</a>
+                            <i class="fa-solid fa-angle-down" style="font-size: 8px;"></i>
+                            <ul class="drop-down-sub-list">
+                                <li>
+                                    <a href="#">
+                                        EUR
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">GPB</a>
+                                </li>
+                                <li>
+                                    <a href="#">RUP</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="language">
+                            <a href="#">English</a>
+                            <i class="fa-solid fa-angle-down" style="font-size: 10px;"></i>
+                            <ul class="drop-down-sub-list">
+                                <li>
+                                    <a href="#">
+                                        French
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Spanish</a>
+                                </li>
+                                <li>
+                                    <a href="#">Russian</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container-fluid p-0">
+                <div class="row mx-0">
+                    <div class="col-md-3 col-lg-3 p-0">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="/img/logo.png" alt="logo" class="logo-pic">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="search-container">
+                            <form action="#">
+                                <div class="search-box">
+                                    <div class="select-categories">
+                                        <select name="categories" id="categories">
+                                            <option value="#">All Categories</option>
+                                            <option value="1">Accessories</option>
+                                            <option value="2">Accessories & More</option>
+                                            <option value="3">Butters & Eggs</option>
+                                            <option value="4">Camera & Video</option>
+                                            <option value="5">Mornitors</option>
+                                            <option value="6">Tablets</option>
+                                            <option value="7">Handbags</option>
+                                        </select>
+
+                                        <span>
+                                            <span> All Categories</span> 
+                                            <i class="fa-solid fa-angle-down" style="font-size: 14px; margin-left: 12px;"></i>
+                                        </span>
+
+                                        <ul class="list-categories">
+                                            <li value="0">All Categories</li>
+                                            <li value="1">Accessories</li>
+                                            <li value="2">Accessories & More</li>
+                                            <li value="3">Butters & Eggs</li>
+                                            <li value="4">Camera & Video</li>
+                                            <li value="5">Mornitors</li>
+                                            <li value="6">Tablets</li>
+                                            <li value="7">Handbags</li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-nav">
+                                        <input type="text" placeholder="Search product...">
+                                        <i class=" icon-search fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col md-3 col-lg-3 p-0">
+                        <div class="account-section">
+                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-bag-shopping carts btn-cart">
+                            </i>
+                            <span class="notif-cart">2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container-fluid p-0">
+                <div class="row mx-0">
+                    <div class="col-md-3 col-lg-3 px-0">
+                        <div class="categories">
+                            <div class="name-categories">
+                                <i class="fa-solid fa-bars icon-bar"></i>
+                                <span>Categories</span>
+                            </div>
+                            <ul class="menu-toggle-categories">
+                                <li>
+                                    <a href="#">Brake Parts
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                    <ul class="items-menu">
+                                        <li class="children-items">
+                                            <a href="#">DRESSES</a>
+                                            <ul class="sub-children-items">
+                                                <li>Sweater</li>
+                                                <li>Evening</li>
+                                                <li>Day</li>
+                                                <li>Sports</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">Handbags</a>
+                                            <ul class="sub-children-items">
+                                                <li>Shoulder</li>
+                                                <li>Satchels</li>
+                                                <li>Kids</li>
+                                                <li>Coats</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">Shoes</a>
+                                            <ul class="sub-children-items">
+                                                <li>Ankle Boots</li>
+                                                <li>Clog Sandals</li>
+                                                <li>Run</li>
+                                                <li>Books</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">Clothing</a>
+                                            <ul class="sub-children-items">
+                                                <li>Coats Jackets</li>
+                                                <li>Raincoats</li>
+                                                <li>Jackets</li>
+                                                <li>T-shirts</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Wheels & Tires
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                    <ul class="items-menu">
+                                        <li class="children-items">
+                                            <a href="#">Chair</a>
+                                            <ul class="sub-children-items">
+                                                <li>Dining Room</li>
+                                                <li>Bebroom</li>
+                                                <li>Home&Coffice</li>
+                                                <li>Living Room</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">lighting</a>
+                                            <ul class="sub-children-items">
+                                                <li>Ceiling Lighting</li>
+                                                <li>Wall Lighting</li>
+                                                <li>OutDoor Lighting</li>
+                                                <li>Smart Lighting</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">Sofa</a>
+                                            <ul class="sub-children-items">
+                                                <li>Fabric Sofa</li>
+                                                <li>Leather Sofa</li>
+                                                <li>Corner Sofa</li>
+                                                <li>Sofa Beds</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Furnitured & Decor
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                    <ul class="items-menu">
+                                        <li class="children-items">
+                                            <a href="#">Brake Tools</a>
+                                            <ul class="sub-children-items">
+                                                <li>Spools</li>
+                                                <li>Diesel</li>
+                                                <li>Gasoline</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">Emergency Brake</a>
+                                            <ul class="sub-children-items">
+                                                <li>Doll's For Girls</li>
+                                                <li>Girl's Learning Toys</li>
+                                                <li>Video For Girls</li>
+                                                <li>Arts And Crafts For Girls</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Furnitured & Decor
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                    <ul class="items-menu">
+                                        <li class="children-items">
+                                            <a href="#">Check Trousers</a>
+                                            <ul class="sub-children-items">
+                                                <li>Building</li>
+                                                <li>Electronic</li>
+                                                <li>Action Figures</li>
+                                                <li>Specialty & Boutique Toys</li>
+                                            </ul>
+                                        </li>
+                                        <li class="children-items">
+                                            <a href="#">Calculators</a>
+                                            <ul class="sub-children-items">
+                                                <li>Building</li>
+                                                <li>Electronic</li>
+                                                <li>Action Figures</li>
+                                                <li>Specialty & Boutique Toys</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Engine Part
+                                </li>
+                                <li>
+                                    <span>+</span> More
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9 px-0">
+                        <div class="header-bottom-right"> 
+                            <ul class="main-menu p-0">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Contact US</a></li>
+                            </ul>
+
+                            <div class="call-support">
+                                Call Support: 0123456789
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    
+    <!-- Slide Section -->
+    <div class="slider-section">
+        <div class="container-fluid px-0">
+            <div class="row mx-0">
+                <div class="col-md-12 col-lg-12 px-0">
+                    <div class="list-slider">
+                        <div class="slide-item">
+                            <img src="/img/slider1.jpg" alt="slide1">
+                            <div class="barner-info">
+                                <h1>BIG SALE</h1>
+                                <p>Discount <span class="hight-light-text">20% off</span> For Members</p>
+                                <button class="btn-discover">
+                                    discover now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <img src="/img/slider2.jpg" alt="2">
+                            <div class="barner-info">
+                                <h1>BIG SALE</h1>
+                                <p>Discount <span class="hight-light-text">20% off</span> For Members</p>
+                                <button class="btn-discover">
+                                    discover now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <img src="/img/slider3.jpg" alt="3">
+                            <div class="barner-info">
+                                <h1>BIG SALE</h1>
+                                <p>Discount <span class="hight-light-text">20% off</span> For Members</p>
+                                <button class="btn-discover">
+                                    discover now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slide Section -->
+
+    <!-- Service Section -->
+    <div class="service-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 px-0">
+                    <div class="shipping-contain">
+                        <div class="img">
+                            <img src="./img/shipping1.png" alt="">
+                        </div>
+                        <div class="paragrah">
+                            <p class="heading">
+                                Free Delivery
+                            </p>
+                            <p class="text-body">
+                                Free shipping around the world for all orders over $120
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 px-0">
+                    <div class="shipping-contain">
+                        <div class="img">
+                            <img src="./img/shipping2.png" alt="">
+                        </div>
+                        <div class="paragrah">
+                            <p class="heading">
+                                Safe Payment
+                            </p>
+                            <p class="text-body">
+                                With our payment gateway, don’t worry
+                                about your information
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 px-0">
+                    <div class="shipping-contain">
+                        <div class="img">
+                            <img src="./img/shipping3.png" alt="">
+                        </div>
+                        <div class="paragrah">
+                            <p class="heading">
+                                Friendly Services
+                            </p>
+                            <p class="text-body">
+                                You have 30-day return guarantee for
+                                every single order
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service Section -->
+
+    <!-- Section News Sale -->
+    <div class="news-section">
+        <div class="container">
+            <div class="row px-0 mx-0">
+                <div class="col-md-6 col-lg-6 px-3">
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="/img/banner1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p>
+                                Big Sale Product
+                            </p>
+                            <h2>
+                                Plants<br> For Interior
+                            </h2>
+                            <button>
+                                <a href="#">Shop now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 px-3">
+                    <div class="news-content">
+                        <div class="img">
+                            <img src="/img/banner2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p>
+                                Big Sale Product
+                            </p>
+                            <h2>
+                                Plants<br> For Interior
+                            </h2>
+                            <button>
+                                <a href="#">Shop now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section News Sale -->
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="container">
+            <div class="row px-0 mx-0">
+                <div class="col-md-12 col-lg-12">
+                    <div class="heading">
+                        <h2>
+                            Our Product
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-0 mx-0">
+                <div class="col-md-12 col-lg-12">
+                    <ul class="nav-product">
+                        <li class="nav-product-item">
+                            <a href="#">
+                                PLANT STANDS & MOVERS
+                            </a>
+                        </li>
+                        <li class="nav-product-item">
+                            <a href="#">
+                                PLANT FAMILIES
+                            </a>
+                        </li>
+                        <li class="nav-product-item">
+                            <a href="#">
+                                OUTDOOR PLANT POTS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row px-0 mx-0">
+                <div class="product-collections">
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="/img/product3.jpg" alt="product1">
+                        </div>
+                        <div class="rate">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="desc-product">
+                            <p>
+                                <a href="#">
+                                    fringilla augue
+                                </a>
+                            </p>
+                            <p class="price">
+                                <span class="now-price">£ 60.00</span>
+                                <span class="old-price">£ 70.00</span>
+                            </p>
+                        </div>
+
+                        <div class="coupon-persent">
+                            -7%
+                        </div>
+                        <div class="action-link">
+                            <a href="#">
+                                <i class="fa-regular fa-bag-shopping" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-sliders" style="font-weight: 700; font-size: 20px;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Section -->
+
+    <!-- Section Deal Today -->
+    <div class="deals-today">
+        <div class="container-fluid mx-0">
+            <div class="row mx-0 px-0">
+                <div class="heading">
+                    <h2>
+                        Today Deals
+                    </h2>
+                </div>
+            </div>
+            <div class="row mx-0 px-0 mt-5">
+                <div class="col-md-3 col-lg-3 px-0">
+                    <div class="detail-product">
+                        <div class="items-today">
+                            <div class="img">
+                                <img src="/img/product3.jpg" alt="product1">
+                            </div>
+                            <div class="rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="desc-product">
+                                <p>
+                                    <a href="#">
+                                        fringilla augue
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="now-price">£ 60.00</span>
+                                    <span class="old-price">£ 70.00</span>
+                                </p>
+                            </div>
+
+                            <div class="coupon-persent">
+                                -7%
+                            </div>
+                            <div class="action-link">
+                                <ul class="timting-coupon m-0 px-0">
+                                    <li class="days">
+                                        <p class="count-days">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            DAYS
+                                        </p>
+                                    </li>
+                                    <li class="hours">
+                                        <p class="count-hours">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            HOURS
+                                        </p>
+                                    </li>
+                                    <li class="minutes">
+                                        <p class="count-minutes">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            MINS
+                                        </p>
+                                    </li>
+                                    <li class="seconds">
+                                        <p class="count-second">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            SECS
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 px-0">
+                    <div class="detail-product">
+                        <div class="items-today">
+                            <div class="img">
+                                <img src="/img/product3.jpg" alt="product1">
+                            </div>
+                            <div class="rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="desc-product">
+                                <p>
+                                    <a href="#">
+                                        fringilla augue
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="now-price">£ 60.00</span>
+                                    <span class="old-price">£ 70.00</span>
+                                </p>
+                            </div>
+
+                            <div class="coupon-persent">
+                                -7%
+                            </div>
+                            <div class="action-link">
+                                <ul class="timting-coupon m-0 px-0">
+                                    <li class="days">
+                                        <p class="count-days">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            DAYS
+                                        </p>
+                                    </li>
+                                    <li class="hours">
+                                        <p class="count-hours">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            HOURS
+                                        </p>
+                                    </li>
+                                    <li class="minutes">
+                                        <p class="count-minutes">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            MINS
+                                        </p>
+                                    </li>
+                                    <li class="seconds">
+                                        <p class="count-second">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            SECS
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 px-0">
+                    <div class="detail-product">
+                        <div class="items-today">
+                            <div class="img">
+                                <img src="/img/product3.jpg" alt="product1">
+                            </div>
+                            <div class="rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="desc-product">
+                                <p>
+                                    <a href="#">
+                                        fringilla augue
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="now-price">£ 60.00</span>
+                                    <span class="old-price">£ 70.00</span>
+                                </p>
+                            </div>
+
+                            <div class="coupon-persent">
+                                -7%
+                            </div>
+                            <div class="action-link">
+                                <ul class="timting-coupon m-0 px-0">
+                                    <li class="days">
+                                        <p class="count-days">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            DAYS
+                                        </p>
+                                    </li>
+                                    <li class="hours">
+                                        <p class="count-hours">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            HOURS
+                                        </p>
+                                    </li>
+                                    <li class="minutes">
+                                        <p class="count-minutes">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            MINS
+                                        </p>
+                                    </li>
+                                    <li class="seconds">
+                                        <p class="count-second">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            SECS
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 px-0">
+                    <div class="detail-product">
+                        <div class="items-today">
+                            <div class="img">
+                                <img src="/img/product3.jpg" alt="product1">
+                            </div>
+                            <div class="rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="desc-product">
+                                <p>
+                                    <a href="#">
+                                        fringilla augue
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="now-price">£ 60.00</span>
+                                    <span class="old-price">£ 70.00</span>
+                                </p>
+                            </div>
+
+                            <div class="coupon-persent">
+                                -7%
+                            </div>
+                            <div class="action-link">
+                                <ul class="timting-coupon m-0 px-0">
+                                    <li class="days">
+                                        <p class="count-days">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            DAYS
+                                        </p>
+                                    </li>
+                                    <li class="hours">
+                                        <p class="count-hours">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            HOURS
+                                        </p>
+                                    </li>
+                                    <li class="minutes">
+                                        <p class="count-minutes">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            MINS
+                                        </p>
+                                    </li>
+                                    <li class="seconds">
+                                        <p class="count-second">
+                                            12
+                                        </p>
+                                        <p class="label-times">
+                                            SECS
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section -->
+
+    <!-- Review Section -->
+    <div class="reviews-section">
+        <div class="container">
+            <div class="row mx-0 px-0">
+                <div class="col-md-12 col-lg-12">
+                    <div class="heading">
+                        <h2 class="heading-text m-0">
+                            What Our Customers Says ?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 px-0">
+            </div>
+            <div class="row mx-0 px-0">
+                <div class="col-md-1 col-lg-1"></div>
+                <div class="col-md-10 col-lg-10">
+                    <div class="content-review">
+                        <div class="content-review-items">
+                            <div class="icon-review">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="text-content">
+                                “ When a beautiful design is combined with powerful technology, <br>
+                                it truly is an artwork. I love how my website operates and looks with this theme.
+                                 Thank you for the awesome
+                                 <br> product. ”
+                            </p>
+                            <div class="img-content-reviews">
+                                <img src="/img/testimonial1.png" alt="">
+                            </div>
+                            <div class="author-review">
+                                <p>
+                                    <a href="#">
+                                        Rebecka Filson
+                                    </a>
+                                    <span>
+                                        / Ceo Of CSC
+                                    </span>
+                                </p>
+                            </div>
+    
+                        </div>
+                        <div class="content-review-items">
+                            <div class="icon-review">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="text-content">
+                                “ When a beautiful design is combined with powerful technology, <br>
+                                it truly is an artwork. I love how my website operates and looks with this theme.
+                                 Thank you for the awesome
+                                 <br> product. ”
+                            </p>
+                            <div class="img-content-reviews">
+                                <img src="/img/testimonial1.png" alt="">
+                            </div>
+                            <div class="author-review">
+                                <p>
+                                    <a href="#">
+                                        Rebecka Filson
+                                    </a>
+                                    <span>
+                                        / Ceo Of CSC
+                                    </span>
+                                </p>
+                            </div>
+    
+                        </div>
+                        <div class="content-review-items">
+                            <div class="icon-review">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="text-content">
+                                “ When a beautiful design is combined with powerful technology, <br>
+                                it truly is an artwork. I love how my website operates and looks with this theme.
+                                 Thank you for the awesome
+                                 <br> product. ”
+                            </p>
+                            <div class="img-content-reviews">
+                                <img src="/img/testimonial1.png" alt="">
+                            </div>
+                            <div class="author-review">
+                                <p>
+                                    <a href="#">
+                                        Rebecka Filson
+                                    </a>
+                                    <span>
+                                        / Ceo Of CSC
+                                    </span>
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Review Section -->
+
+    <!-- Section Post List -->
+    <div class="post-section">
+        <div class="container-fluid mx-0 px-0">
+            <div class="row mx-0 px-0">
+                <div class="col-md-12 col-lg-12">
+                    <div class="heading">
+                        <h2 class="heading-text">
+                            Our Latest Posts
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 px-0">
+                <div class="list-post">
+                    <div class="col-md-4 col-lg-4">
+                        <div class="post-items">
+                            <div class="image">
+                                <img src="/img/blog1.jpg" alt="">
+                            </div>
+                            <div class="content-post">
+                                <h4 class="title"> Libero Lorem </h4>
+                               <p>By  <span class="author-time">admin/ July 16,2021</span></p>
+                                <p class="desc">
+                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent.
+                                </p>
+                            </div>
+                            <div class="content-bottom">
+                                <a href="#">Continue Reading</a>
+                                <p class="comment m-0"><i class="fa-regular fa-comment"></i> 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="post-items">
+                            <div class="image">
+                                <img src="/img/blog1.jpg" alt="">
+                            </div>
+                            <div class="content-post">
+                                <h4 class="title"> Libero Lorem </h4>
+                               <p>By  <span class="author-time">admin/ July 16,2021</span></p>
+                                <p class="desc">
+                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent.
+                                </p>
+                            </div>
+                            <div class="content-bottom">
+                                <a href="#">Continue Reading</a>
+                                <p class="comment m-0"><i class="fa-regular fa-comment"></i> 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="post-items">
+                            <div class="image">
+                                <img src="/img/blog1.jpg" alt="">
+                            </div>
+                            <div class="content-post">
+                                <h4 class="title"> Libero Lorem </h4>
+                               <p>By  <span class="author-time">admin/ July 16,2021</span></p>
+                                <p class="desc">
+                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent.
+                                </p>
+                            </div>
+                            <div class="content-bottom">
+                                <a href="#">Continue Reading</a>
+                                <p class="comment m-0"><i class="fa-regular fa-comment"></i> 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="post-items">
+                            <div class="image">
+                                <img src="/img/blog1.jpg" alt="">
+                            </div>
+                            <div class="content-post">
+                                <h4 class="title"> Libero Lorem </h4>
+                               <p>By  <span class="author-time">admin/ July 16,2021</span></p>
+                                <p class="desc">
+                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent.
+                                </p>
+                            </div>
+                            <div class="content-bottom">
+                                <a href="#">Continue Reading</a>
+                                <p class="comment m-0"><i class="fa-regular fa-comment"></i> 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section Post List -->
+
+    <!-- Subscribe Section -->
+    <div class="subscribe-section">
+        <row class="mx-0 px-0">
+            <div class="col-md-12 col-lg-12">
+                <div class="heading">
+                    <h2>Get 
+                        <span class="hight-light-text">20% Off</span>
+                        Your Next Order
+                    </h2>
+                </div>
+                <form action="#" id="info-subscribe">
+                    <input type="text" id="enter-email" placeholder="Enter your email">
+                    <button type="submit" id="btn-email">Subscribe</button>
+                    <i class="fa-regular fa-envelope email-icon"></i>
+                </form>
+            </div>
+        </row>
+    </div>
+    <!-- End Section Subscribe -->
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class=" row mx-0 px-0">
+                    <div class="col-md-2 col-lg-2 px-0">
+                        <div class="open-time items-footer">
+                            <h3>
+                                Opening Time
+                            </h3>
+                            <ul class="info m-0">
+                                <li>Mon - Fri: 8AM - 10PM</li>
+                                <li>Sat: 9AM-8PM</li>
+                                <li>Suns: 14hPM-18hPM</li>
+                            </ul>
+                            <p class="note">
+                                We Work All The Holidays
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 px-0">
+                        <div class="open-time items-footer">
+                            <h3>
+                                information
+                            </h3>
+                            <ul class="info m-0">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Check Out</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Frequently Questions</a></li>
+                                <li><a href="#">Whishlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="footer-nav">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="/img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <ul class="nav m-0 p-0">
+                                <li>
+                                    <a href="#">Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliates</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Internet</a>
+                                </li>
+                            </ul>
+                            <ul class=" social nav m-0 p-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="app">
+                                <a href="#">
+                                    <img src="/img/icon-app.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/icon1-app.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 px-0">
+                        <div class="open-time items-footer">
+                            <h3>
+                              My Account
+                            </h3>
+                            <ul class="info m-0">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Shopping Cart</a></li>
+                                <li><a href="#">Check Out</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 px-0">
+                        <div class="open-time items-footer">
+                            <h3>
+                                Customer Service
+                            </h3>
+                            <ul class="info m-0">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row mx-0 px-0">
+                   <div class="content">
+                        <div class="text-copy-right">
+                            <p>
+                                &copy <a href="https://template.hasthemes.com/lukani/lukani/index.html#" target="_blank">
+                                    Lukani Shop
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="list-paymethod">
+                            <a href="#">
+                                <img src="/img/payment.png" alt="">
+                            </a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Section -->
+
+    <!-- Modal cart section -->
+        <div class="modal-cart">
+            <div class="cart-content">
+                <div class="title-cart">
+                    <p>Cart</p>
+                    <p class="icon-close">
+                        <i class="fa-regular fa-xmark"></i>
+                    </p>
+                </div>
+                <div class="product-gallery">
+                    <div class="product-items">
+                        <div class="image">
+                            <img src="/img/product3.jpg" alt="">
+                        </div>
+                        <div class="desc-items">
+                            <p class="name-product">
+                                Primis In Faucibus
+                            </p>
+                            <p class="amount-price-product">
+                                1 x 
+                                <span style="font-size: 12px; font-weight: 600;">
+                                    &dollar; 65.00
+                                </span>
+                            </p>
+                        </div>
+                        <p class="icon-close">
+                            <i class="fa-regular fa-xmark"></i>
+                        </p>
+                    </div>
+                    <div class="product-items">
+                        <div class="image">
+                            <img src="/img/product3.jpg" alt="">
+                        </div>
+                        <div class="desc-items">
+                            <p class="name-product">
+                                Primis In Faucibus
+                            </p>
+                            <p class="amount-price-product">
+                                1 x 
+                                <span style="font-size: 12px; font-weight: 600;">
+                                    &dollar; 65.00
+                                </span>
+                            </p>
+                        </div>
+                        <p class="icon-close">
+                            <i class="fa-regular fa-xmark"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-bill">
+                    <p class="sub-total">Sub total: <span>&dollar;125.00</span></p>
+                    <p class="total">Total: <span>&dollar;125.00</span></p>
+                </div>
+                <div class="btn-control">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        View cart
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        CheckOut
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- End Modal -->
+
+    <!-- Modal Landing page section -->
+        <div class="modal-landing">
+            <div class="content-landing">
+                <h3>News Letter</h3>
+                <p>
+                    Enter your email address to subscribe our notification of our new post & features by email.
+                </p>
+                <form action="#">
+                    <input type="text" id="enter-email-landing" placeholder="Enter your email address here.">
+                    <a href="#"> SUBSCRIBE </a>
+                    <div class="check-popuplanding">
+                        <input type="checkbox" id="hide-section" name="hide-section">
+                        <label for="hide-section">
+                            Don't show this popup again
+                        </label>
+                    </div>
+                </form>
+                <button class="close-landing">
+                    Close
+                </button>
+            </div>
+        </div>
+    <!-- End Modal Landing page Section-->
+    <!-- CDN Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- cdn Jquery migrate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js" integrity="sha512-QDsjSX1mStBIAnNXx31dyvw4wVdHjonOwrkaIhpiIlzqGUCdsI62MwQtHpJF+Npy2SmSlGSROoNWQCOFpqbsOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- cdn Slick slider -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- JS custom -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
