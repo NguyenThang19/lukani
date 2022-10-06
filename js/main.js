@@ -154,4 +154,16 @@ $(document).ready(function () {
     
     // Call Function here
     setValueCategoryForSearch();
+    $('.menu-toggle-categories .hidden').hide();
+    $('.menu-toggle-categories #more').click((e) => {
+        // e.preventDefault();
+        $('.menu-toggle-categories .hidden').toggle(500);
+        let moreText =  '<i class="fa fa-plus" value="1"></i> More Categories';
+        let lessText = ' <i class="fa fa-minus" value="0"></i> Less Categories';
+        if(parseInt($('.menu-toggle-categories #more > i').attr('value')) === 1){
+            $('.menu-toggle-categories #more').html(lessText);
+        }else{
+            $('.menu-toggle-categories #more').html(moreText);
+        }
+    });
 });
